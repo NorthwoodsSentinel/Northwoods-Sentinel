@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allMedia = await getCollection('media', ({ data }) => {
+  return data.draft !== true;
+});
+
+const media = allMedia.sort((a, b) =>
+  b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<BaseLayout title="Media" description="Video content, talks, and multimedia exploration">
+  <div class="container">
+    <header class="page-header">
+      <h1>Media</h1>
+      <p>Video content, talks, and multimedia exploration</p>
+    </header>
+
+    {media.length === 0 ? (
+      <p class="empty-state">No media published yet. Check back soon.</p>
+    ) : (
+      <ul class="content-list">
+        {media.map((entry) => (
+          <li>
+            <a href={`/media/${entry.slug}`} class="content-item">
+              <h2>{entry.data.title}</h2>
+              <p>{entry.data.description}</p>
+              <div class="meta">
+                <time datetime={entry.data.date.toISOString()}>
+                  {entry.data.date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </time>
+                {entry.data.tags && entry.data.tags.length > 0 && (
+                  <div class="tags">
+                    {entry.data.tags.map((tag) => (
+                      <span class="tag">{tag}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+
+  <style>
+    .page-header {
+      margin-bottom: var(--spacing-2xl);
+      padding-bottom: var(--spacing-lg);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .page-header h1 {
+      margin-bottom: var(--spacing-xs);
+      margin-top: 0;
+    }
+
+    .page-header p {
+      color: var(--color-text-muted);
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    .empty-state {
+      text-align: center;
+      color: var(--color-text-muted);
+      padding: var(--spacing-2xl);
+    }
+
+    .content-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content-list li {
+      margin-bottom: var(--spacing-xl);
+    }
+
+    .content-item {
+      display: block;
+      text-decoration: none;
+      color: var(--color-text);
+      padding: var(--spacing-md);
+      border-left: 3px solid transparent;
+      transition: border-color 0.2s, padding-left 0.2s;
+    }
+
+    .content-item:hover {
+      border-left-color: var(--color-accent);
+      padding-left: var(--spacing-lg);
+    }
+
+    .content-item h2 {
+      margin-top: 0;
+      margin-bottom: var(--spacing-sm);
+      font-size: 1.5rem;
+    }
+
+    .content-item p {
+      margin-bottom: var(--spacing-sm);
+      color: var(--color-text-muted);
+    }
+
+    .meta {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-md);
+      flex-wrap: wrap;
+    }
+
+    .meta time {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-xs);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      background-color: var(--color-bg-subtle);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+    }
+  </style>
+</BaseLayout>

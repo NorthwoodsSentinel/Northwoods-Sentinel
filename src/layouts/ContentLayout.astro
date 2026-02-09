@@ -1,0 +1,116 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'essays'> | CollectionEntry<'flowlabs'> | CollectionEntry<'systems'> | CollectionEntry<'media'>;
+}
+
+const { entry } = Astro.props;
+const { title, description, date, tags } = entry.data;
+
+// Format date
+const formattedDate = new Date(date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+
+// Calculate reading time (rough estimate: 200 words per minute)
+const content = await entry.render();
+const words = content.remarkPluginFrontmatter?.wordCount ?? 0;
+const readingTime = Math.ceil(words / 200);
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="article">
+    <div class="container">
+      <header class="article-header">
+        <h1>{title}</h1>
+        <div class="article-meta">
+          <time datetime={date.toISOString()}>{formattedDate}</time>
+          {readingTime > 0 && (
+            <>
+              <span class="separator">·</span>
+              <span>{readingTime} min read</span>
+            </>
+          )}
+        </div>
+        {tags && tags.length > 0 && (
+          <div class="tags">
+            {tags.map((tag) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        )}
+      </header>
+
+      <div class="article-content prose">
+        <slot />
+      </div>
+    </div>
+  </article>
+
+  <style>
+    .article {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .article-header {
+      margin-bottom: var(--spacing-2xl);
+      padding-bottom: var(--spacing-lg);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .article-header h1 {
+      margin-bottom: var(--spacing-sm);
+      margin-top: 0;
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xs);
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .separator {
+      opacity: 0.5;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-xs);
+      margin-top: var(--spacing-sm);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background-color: var(--color-bg-subtle);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    .article-content {
+      line-height: 1.8;
+    }
+
+    /* First paragraph styling */
+    .article-content :global(p:first-of-type) {
+      font-size: 1.1em;
+      color: var(--color-text);
+    }
+
+    @media (max-width: 768px) {
+      .article-header {
+        margin-bottom: var(--spacing-lg);
+      }
+    }
+  </style>
+</BaseLayout>

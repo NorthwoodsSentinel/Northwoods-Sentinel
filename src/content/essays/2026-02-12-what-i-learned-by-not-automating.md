@@ -10,7 +10,7 @@ I almost built the wrong thing.
 
 ## The Setup
 
-January 2026. I had a stack of meeting transcripts on my desktop. Four Otter.ai recordings from critical client calls—Racine County, Kohl's, UWCU. Hours of conversations containing intelligence I needed to capture: technical stack details, renewal timing, relationship signals, political dynamics.
+January 2026. I had a stack of meeting transcripts on my desktop. Four Otter.ai recordings from critical client calls. Hours of conversations containing intelligence I needed to capture: technical stack details, renewal timing, relationship signals, political dynamics.
 
 The APIs were right there. Otter has webhooks. Gong had just given me a license. Every technical instinct in me screamed: *"Automate this now."*
 

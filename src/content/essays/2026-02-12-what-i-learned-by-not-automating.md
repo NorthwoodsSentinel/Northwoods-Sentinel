@@ -59,7 +59,7 @@ The real friction point? A startup scan that answers three questions in under 10
 
 This isn't isolated.
 
-In January, AEBS gave me a Gong license for call recording. I looked at it and thought: *"I don't need this."* Set it aside. Didn't see the value.
+In January, I got access to a call recording platform. I looked at it and thought: *"I don't need this."* Set it aside. Didn't see the value.
 
 In February, I built the intelligence capture infrastructure—the `.tags` system, the account memory architecture, the quick-recall queries.
 

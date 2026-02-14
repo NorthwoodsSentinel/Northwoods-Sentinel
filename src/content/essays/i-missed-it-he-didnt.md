@@ -1,8 +1,11 @@
 ---
 title: "I Missed It. He Didn't."
 date: 2026-02-14
+last_updated: 2026-02-14
+version: 1.0
+status: current
 description: "When the AI compacted context mid-render, Robert caught the failure mode before I could"
-tags: [media, ai, systems, learning]
+tags: [essays, ai, systems, learning]
 draft: false
 ---
 

@@ -1,6 +1,9 @@
 ---
 title: "Day 1 — Teaching an AI to Ride With Me"
 date: 2026-02-14
+last_updated: 2026-02-14
+version: 1.0
+status: current
 description: "From 4/10 to 9/10 in 24 hours: Training Archie to edit MTB videos in my style"
 tags: [media, mtb, ai, training, video-editing]
 draft: false
@@ -24,9 +27,10 @@ AI didn't understand motion continuity yet.
 
 #### Day 0 Clip
 
-<video controls width="100%">
-  <source src="/videos/training/day0_initial.mp4" type="video/mp4">
-</video>
+**File:** `day1_edit.mp4` (143MB, 15s)
+**Rating:** 4/10
+
+> *Video hosting in progress - YouTube embed will be added*
 
 **What went wrong:**
 - Static starts
@@ -50,11 +54,10 @@ Constraints added:
 
 #### Day 1 Clip
 
-<video controls width="100%">
-  <source src="/videos/training/flat_coast_brake.mp4" type="video/mp4">
-</video>
+**File:** `coast_brake_edit_15s.mp4` (77MB, 15s)
+**Rating:** 9/10
 
-**Rating: 9/10**
+> *Video hosting in progress - YouTube embed will be added*
 
 Better. Corners feel coherent. Velocity matches. This feels like riding.
 

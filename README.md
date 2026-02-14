@@ -36,3 +36,4 @@ npm run preview      # Preview production build
 ---
 
 Built with Astro • Deployed on Netlify • Publishing velocity optimized
+<!-- Token test: Sat Feb 14 12:17:53 CST 2026 -->

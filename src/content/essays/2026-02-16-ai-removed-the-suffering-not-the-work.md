@@ -1,3 +1,11 @@
+---
+title: "AI Removed the Suffering, Not the Work"
+date: 2026-02-16
+description: "AI doesn't just save time. It removes the emotional and cognitive friction that kills ideas before they ship."
+tags: [ai, friction, cognition, systems-thinking]
+draft: false
+---
+
 # AI Removed the Suffering, Not the Work
 
 I realized today that I've been describing AI assistance wrong.

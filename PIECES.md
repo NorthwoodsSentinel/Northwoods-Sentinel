@@ -6,7 +6,7 @@
 
 ---
 
-## DRAFT
+## PUBLISHED
 
 ### I Used to Think I Had a Discipline Problem
 - **Synopsis:** ADHD reframe essay. Ideas evaporating → shame loop → productivity systems reinforcing failure → ride bag as proof the issue was friction not discipline → AI meeting me where I was → low-friction inbox + AI processing → nervous system relief → ADHD as design constraint not flaw → cognitive research validates lived experience → AI as mirror (reinforce or challenge) → designing WITH the mind, not against it.
@@ -16,7 +16,8 @@
 - **Thesis:** This is NOT a productivity essay. It is about misdiagnosing yourself as undisciplined when the real issue is friction between cognition and systems.
 - **Strong lines (preserve):** "I wasn't just losing ideas. I was collecting evidence against myself." / "That moment wasn't confusion. It was shame." / "I stopped treating myself like a failed implementation." / "It was a shame interruption." / Ending: designing with my mind.
 - **Status note:** Flagship piece — establishes voice and thematic direction for NorthWoods Sentinel. Four drafts deep. Final polish complete. Ready for Rob's approval to publish.
-- **Notes:** Reviewed by Mirror. Light edit applied (removed one performative line, smoothed ADHD→research transition). No structural changes needed.
+- **Published:** 2026-02-20
+- **Notes:** Four drafts (original → Mirror → ride bag integration → final polish). Flagship piece — establishes voice and thematic direction.
 
 ---
 

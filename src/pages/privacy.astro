@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Privacy Policy" description="Privacy policy for Northwoods Sentinel — what data is collected and how it is used.">
+  <div class="container">
+    <div class="legal-page">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: February 21, 2026 &nbsp;·&nbsp; Last updated: February 21, 2026</p>
+
+      <p>Northwoods Sentinel is a personal website owned and operated by Robert Chuvala. This policy explains what information is collected when you visit this site and how it is used.</p>
+
+      <h2>What We Collect</h2>
+      <p>When you visit Northwoods Sentinel, the following information may be collected automatically:</p>
+      <ul>
+        <li><strong>Page views and navigation</strong> — which pages you visit and how you move through the site</li>
+        <li><strong>Device and browser information</strong> — browser type, operating system, screen resolution</li>
+        <li><strong>Approximate location</strong> — country or region, derived from your IP address</li>
+        <li><strong>Referral source</strong> — how you arrived at the site (search engine, direct link, external site)</li>
+      </ul>
+      <p>This site does not collect your name, email address, or any information that directly identifies you. There are no user accounts, contact forms, or login systems.</p>
+
+      <h2>How We Use It</h2>
+      <p>Analytics data is used to understand how the site is being read — which essays get traffic, where readers come from, and how the site performs. This helps improve the content and experience.</p>
+      <p>No data is sold. No data is shared with advertisers. No data is used for behavioral targeting or profiling.</p>
+
+      <h2>Cookies</h2>
+      <p>This site uses cookies placed by Google Analytics to track visits across sessions. These are analytics cookies, not advertising cookies.</p>
+      <ul>
+        <li><code>_ga</code> — distinguishes unique users, expires after 2 years</li>
+        <li><code>_ga_[ID]</code> — stores and counts pageviews, expires after 2 years</li>
+      </ul>
+      <p>You can opt out of analytics tracking at any time using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-Out Browser Add-On</a>.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>This site uses <strong>Google Analytics 4</strong> to collect and process analytics data. Google acts as a data processor on behalf of this site. Google's use of data is governed by their <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy &amp; Terms</a>.</p>
+      <p>No other third-party services currently collect data from visitors to this site.</p>
+
+      <h2>Data Retention</h2>
+      <p>Google Analytics retains event-level data for 14 months by default. Aggregated reporting data may be retained longer. You can request deletion of data associated with your visits using the opt-out tool above.</p>
+
+      <h2>Your Rights</h2>
+      <p>Depending on where you are located, you may have rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Access</strong> — request information about what data has been collected</li>
+        <li><strong>Deletion</strong> — request deletion of data associated with your use</li>
+        <li><strong>Opt-out</strong> — disable analytics tracking at any time using the opt-out tool above</li>
+        <li><strong>Portability</strong> — request a copy of your data</li>
+      </ul>
+      <p>EU/EEA visitors: This site processes analytics data under a legitimate interest basis. You may object to this processing at any time by contacting us.</p>
+      <p>To exercise any of these rights, contact: <a href="mailto:contact@northwoodssentinel.com">contact@northwoodssentinel.com</a></p>
+
+      <h2>Children's Privacy</h2>
+      <p>This site is not directed at children under 13. No data is knowingly collected from minors.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>This policy may be updated occasionally. The "last updated" date at the top reflects the most recent revision. Continued use of the site after changes constitutes acceptance.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy: <a href="mailto:contact@northwoodssentinel.com">contact@northwoodssentinel.com</a></p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .legal-page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .legal-page h1 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .legal-page .meta {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .legal-page h2 {
+    font-size: 1.2rem;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .legal-page p, .legal-page li {
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .legal-page ul {
+    padding-left: var(--spacing-lg);
+  }
+
+  .legal-page code {
+    background: var(--color-surface);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+</style>

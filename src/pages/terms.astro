@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Terms of Service" description="Terms of service for Northwoods Sentinel.">
+  <div class="container">
+    <div class="legal-page">
+      <h1>Terms of Service</h1>
+      <p class="meta">Effective date: February 21, 2026 &nbsp;·&nbsp; Last updated: February 21, 2026</p>
+
+      <p>By using Northwoods Sentinel (northwoodssentinel.com), you agree to these terms. If you don't agree, please don't use the site.</p>
+
+      <h2>What This Site Is</h2>
+      <p>Northwoods Sentinel is a personal website featuring essays, analysis, and commentary by Robert Chuvala. It is not a news organization, professional advisory service, or commercial publication.</p>
+
+      <h2>Not Professional Advice</h2>
+      <p>Nothing published on this site constitutes professional advice of any kind — including but not limited to legal, financial, medical, or cybersecurity advice.</p>
+      <p>Cybersecurity content on this site reflects personal opinion and general analysis. It should not be relied upon as guidance for specific security decisions, incident response, or compliance obligations. Consult a qualified professional for those needs.</p>
+
+      <h2>Intellectual Property</h2>
+      <p>All content on this site — including essays, writing, analysis, code examples, and visual design — is the intellectual property of Robert Chuvala / Northwoods Sentinel LLC unless otherwise noted.</p>
+      <p>You may quote or reference content with appropriate attribution. You may not republish, reproduce, or adapt content for commercial use without written permission.</p>
+
+      <h2>Disclaimer of Warranties</h2>
+      <p>This site is provided as-is, without warranties of any kind. No guarantees are made regarding:</p>
+      <ul>
+        <li>Accuracy or completeness of content</li>
+        <li>Availability or uptime of the site</li>
+        <li>Fitness for any particular purpose</li>
+      </ul>
+      <p>Content reflects the author's views at the time of writing and may not reflect current thinking or updated information.</p>
+
+      <h2>Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, Robert Chuvala and Northwoods Sentinel LLC shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of this site or reliance on its content.</p>
+
+      <h2>External Links</h2>
+      <p>This site may link to external websites. Those sites have their own terms and privacy policies. We are not responsible for their content or practices.</p>
+
+      <h2>Changes to These Terms</h2>
+      <p>These terms may be updated at any time. The "last updated" date at the top reflects the most recent revision. Continued use of the site after updates constitutes acceptance.</p>
+
+      <h2>Governing Law</h2>
+      <p>These terms are governed by the laws of the State of Wisconsin, United States. Any disputes shall be resolved in the courts of Wisconsin.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about these terms: <a href="mailto:contact@northwoodssentinel.com">contact@northwoodssentinel.com</a></p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .legal-page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .legal-page h1 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .legal-page .meta {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .legal-page h2 {
+    font-size: 1.2rem;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .legal-page p, .legal-page li {
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .legal-page ul {
+    padding-left: var(--spacing-lg);
+  }
+</style>

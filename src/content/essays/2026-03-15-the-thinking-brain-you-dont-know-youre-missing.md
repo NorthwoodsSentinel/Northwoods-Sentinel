@@ -91,3 +91,7 @@ I also know what it looks like after. I'm living it now. On a Sunday night, list
 The thinking brain that doesn't get high.
 
 That's the one I built.
+
+---
+
+*For more writing on AI, cognition, and building a thinking brain — [subscribe on Substack](https://substack.com/@chewvala).*

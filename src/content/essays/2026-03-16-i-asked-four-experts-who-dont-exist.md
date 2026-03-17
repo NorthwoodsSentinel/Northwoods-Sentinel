@@ -65,3 +65,7 @@ But the infrastructure that makes all of that possible on a bad ADHD day, when m
 I've been writing about the thesis — AI as cognitive prosthetic, not second brain. Next, I want to tell you how I got here. Not the tools. The story underneath. The part where everything fell apart and I had to rebuild from scratch — not my infrastructure, but myself.
 
 That's the part that actually matters. The tools just made it visible.
+
+---
+
+*For more writing on AI, cognition, and building a thinking brain — [subscribe on Substack](https://substack.com/@chewvala).*

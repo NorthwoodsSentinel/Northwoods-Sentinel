@@ -65,3 +65,7 @@ I don't have a conclusion yet. I'm still inside the experience, still figuring o
 Something ended today. I'm not sure what began.
 
 But I know it felt different.
+
+---
+
+*For more writing on AI, cognition, and building a thinking brain — [subscribe on Substack](https://substack.com/@chewvala).*

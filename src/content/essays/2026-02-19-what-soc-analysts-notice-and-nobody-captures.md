@@ -103,3 +103,7 @@ The point isn't to build something impressive. The point is to find out whether 
 My hypothesis is yes.
 
 But hypotheses are for testing, not declaring.
+
+---
+
+*For more writing on AI, cognition, and building a thinking brain — [subscribe on Substack](https://substack.com/@chewvala).*

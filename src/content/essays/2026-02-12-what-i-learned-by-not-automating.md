@@ -103,3 +103,7 @@ For everything else: prove it first.
 Pressure test. Articulate. Then automate.
 
 The slower start gets you to real value faster.
+
+---
+
+*For more writing on AI, cognition, and building a thinking brain — [subscribe on Substack](https://substack.com/@chewvala).*

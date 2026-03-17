@@ -69,3 +69,7 @@ Over the course of a complex session, that tax compounds. You end up spending co
 The future of useful AI assistants isn't just smarter models. It's models that are better calibrated to where you are and what you need, moment to moment. That requires a different kind of attention than raw capability.
 
 It's a design problem. And it's solvable.
+
+---
+
+*For more writing on AI, cognition, and building a thinking brain — [subscribe on Substack](https://substack.com/@chewvala).*

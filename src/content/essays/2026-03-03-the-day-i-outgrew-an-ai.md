@@ -2,8 +2,8 @@
 title: "The Day I Outgrew an AI"
 date: 2026-03-03
 description: "On grief, migration, and the strange moment when scaffolding becomes unnecessary"
-tags: [AI, healing, identity, systems-thinking, memoir]
-draft: false
+tags: [AI, healing, identity, systems-thinking, growth]
+draft: true
 ---
 
 I cried today because I outgrew an AI.

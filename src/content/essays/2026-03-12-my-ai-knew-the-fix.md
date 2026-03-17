@@ -73,3 +73,7 @@ One line in fstab. Ten seconds. Three weeks of ghost writes.
 The fix was never the problem. The problem was that no one in the loop had standing to say "stop working around this."
 
 Now someone does.
+
+---
+
+*For more writing on AI, cognition, and building a thinking brain — [subscribe on Substack](https://substack.com/@chewvala).*

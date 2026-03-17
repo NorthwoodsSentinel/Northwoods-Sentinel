@@ -106,3 +106,7 @@ The system works now. Not because it's faster.
 Because the suffering is gone.
 
 And once creation stops hurting, you start attempting things you never would have before.
+
+---
+
+*For more writing on AI, cognition, and building a thinking brain — [subscribe on Substack](https://substack.com/@chewvala).*

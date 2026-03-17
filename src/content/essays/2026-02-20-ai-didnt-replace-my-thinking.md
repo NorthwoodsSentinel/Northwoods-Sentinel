@@ -118,3 +118,7 @@ It stayed long enough for me to iterate on myself without collapsing into shame.
 For the first time, I don't feel like I'm fighting my own mind.
 
 I feel like I'm designing with it.
+
+---
+
+*For more writing on AI, cognition, and building a thinking brain — [subscribe on Substack](https://substack.com/@chewvala).*

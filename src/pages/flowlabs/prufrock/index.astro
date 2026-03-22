@@ -1,0 +1,267 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Prufrock - Voice Fidelity Scoring" description="Does your AI output sound like you? Prufrock scores any document against your personal voice profile. Built for consultants, advisors, and anyone who sends work under their own name.">
+  <div class="container">
+    <section class="product-hero">
+      <p class="eyebrow">FlowLabs</p>
+      <h1>Prufrock</h1>
+      <p class="tagline">Does this sound like you?</p>
+      <p class="subtitle">
+        Voice fidelity scoring for people who use AI to write
+        but can't afford to sound like it.
+      </p>
+    </section>
+
+    <section class="problem">
+      <h2>The Problem Nobody Talks About</h2>
+      <p>
+        AI detection tools ask the wrong question. "Was this written by AI?" doesn't matter.
+        What matters is: does this sound like it came from you?
+      </p>
+      <p>
+        Your clients know your voice. Your partners know how you write. The person reading
+        your deliverable has a feel for whether the words carry your experience or whether
+        they were generated from a training set that learned from everyone and sounds like no one.
+      </p>
+      <p>
+        That gap between "correct" and "yours" is where trust breaks.
+      </p>
+    </section>
+
+    <section class="solution">
+      <h2>What Prufrock Does</h2>
+      <p>
+        Prufrock ingests your actual writing - emails, docs, transcripts, published work -
+        and extracts a voice profile. Sentence patterns, vocabulary fingerprint, paragraph
+        architecture, regional markers, professional tribe language.
+      </p>
+      <p>
+        Then it scores any new document against that profile. Not "is this AI?" but
+        "is this you?" Line by line, with a fidelity score and specific flags where
+        the voice drifts.
+      </p>
+
+      <div class="how-grid">
+        <div class="how-card">
+          <h3>1. Extract</h3>
+          <p>Feed it your corpus. It maps your voice DNA - the patterns you don't even
+          know you have.</p>
+        </div>
+        <div class="how-card">
+          <h3>2. Score</h3>
+          <p>Run any document against your profile. Get a fidelity score and flagged
+          lines that don't match.</p>
+        </div>
+        <div class="how-card">
+          <h3>3. Fix</h3>
+          <p>See exactly where the voice drifts. Rewrite the flagged sections in your
+          actual patterns, not generic "professional" tone.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof">
+      <h2>Built From Personal Friction</h2>
+      <p>
+        I run multiple AI systems. One of them wrote "don't rock the ship" instead of
+        "don't rock the boat." Two review systems missed it. I caught it because something
+        in my chest said <em>wrong</em>.
+      </p>
+      <p>
+        That six-word error opened a door into forensic linguistics - indexicality,
+        shibboleths, idiolect, formulaic sequences. Turns out linguists already had names
+        for what I was sensing. I built the tool that morning.
+      </p>
+      <p>
+        <a href="/essays/2026-03-20-your-ai-sounds-like-nowhere">Read the full story: "Your AI Sounds Like Nowhere"</a>
+      </p>
+    </section>
+
+    <section class="who">
+      <h2>Built For</h2>
+      <ul class="audience-list">
+        <li><strong>Consultants and advisors</strong> whose clients know what they sound like</li>
+        <li><strong>Law firms</strong> where voice consistency is a credibility signal</li>
+        <li><strong>Solo practitioners</strong> who use AI to write but send under their own name</li>
+        <li><strong>Executive teams</strong> whose comms get scrutinized by boards and regulators</li>
+      </ul>
+    </section>
+
+    <section class="pricing">
+      <h2>How It Works</h2>
+      <p>
+        You send me your writing. I extract your voice profile, score your AI output
+        against it, and hand you back everything you need to make your AI sound like you.
+      </p>
+      <div class="how-grid">
+        <div class="how-card">
+          <h3>Voice Extraction</h3>
+          <p>Send 15-20 documents you've written. Emails, deliverables, blog posts,
+          anything in your natural voice. I extract your profile and deliver it back
+          with a full breakdown of your patterns.</p>
+        </div>
+        <div class="how-card">
+          <h3>Fidelity Report</h3>
+          <p>Send me your AI-assisted output. I score it against your profile, flag
+          every line that drifts, and tell you exactly what to fix. You get the report
+          and the instructions to feed your AI.</p>
+        </div>
+        <div class="how-card">
+          <h3>Recalibration</h3>
+          <p>Your voice evolves. New clients, new domains, new patterns. Come back
+          when your AI starts drifting again. Same process, updated profile.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Get Early Access</h2>
+      <p>
+        Prufrock is in private beta. If you're a consultant, advisor, or professional
+        who sends AI-assisted writing under your own name, I want to talk.
+      </p>
+      <a href="mailto:rob@northwoodssentinel.com?subject=Prufrock Early Access" class="cta-button">
+        Request Early Access
+      </a>
+      <p class="cta-sub">
+        Or <a href="https://substack.com/@chewvala">subscribe on Substack</a> for updates.
+      </p>
+    </section>
+  </div>
+
+  <style>
+    .product-hero {
+      text-align: center;
+      padding: var(--spacing-2xl) 0;
+      margin-bottom: var(--spacing-2xl);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.85rem;
+      color: var(--color-accent);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .product-hero h1 {
+      font-size: 3.5rem;
+      margin: 0 0 var(--spacing-sm);
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      font-size: 1.6rem;
+      font-style: italic;
+      color: var(--color-text-muted);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--color-text-muted);
+      max-width: 540px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    section {
+      margin-bottom: var(--spacing-2xl);
+    }
+
+    section h2 {
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--spacing-md);
+      margin-top: var(--spacing-lg);
+    }
+
+    .how-card {
+      padding: var(--spacing-lg);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+    }
+
+    .how-card h3 {
+      margin-top: 0;
+      color: var(--color-accent);
+    }
+
+    .how-card p {
+      margin: 0;
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+    }
+
+    .audience-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .audience-list li {
+      padding: var(--spacing-sm) 0;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 1.05rem;
+    }
+
+    .audience-list li:last-child {
+      border-bottom: none;
+    }
+
+    .cta {
+      text-align: center;
+      padding: var(--spacing-2xl);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      background-color: var(--color-bg-subtle);
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: var(--spacing-md) var(--spacing-xl);
+      background-color: var(--color-accent);
+      color: var(--color-bg);
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: var(--spacing-md) 0;
+      transition: opacity 0.2s;
+    }
+
+    .cta-button:hover {
+      opacity: 0.9;
+    }
+
+    .cta-sub {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+
+    .proof a {
+      color: var(--color-accent);
+    }
+
+    @media (max-width: 768px) {
+      .product-hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+      }
+
+      .how-grid,
+      .price-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</BaseLayout>

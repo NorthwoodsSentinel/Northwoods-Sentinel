@@ -11,16 +11,25 @@ const flowlabs = allFlowlabs.sort((a, b) =>
 );
 ---
 
-<BaseLayout title="FlowLabs" description="Experiments in flow states, biometrics, and human performance">
+<BaseLayout title="FlowLabs" description="Tools for people who think with AI. Voice fidelity, cognitive instrumentation, and the infrastructure between your brain and your output.">
   <div class="container">
     <header class="page-header">
       <h1>FlowLabs</h1>
-      <p>Experiments in flow states, biometrics, and human performance</p>
+      <p>Tools for people who think with AI</p>
     </header>
 
-    {flowlabs.length === 0 ? (
-      <p class="empty-state">No flowlabs published yet. Check back soon.</p>
-    ) : (
+    <section class="featured-product">
+      <a href="/flowlabs/prufrock" class="product-card">
+        <h2>Prufrock</h2>
+        <p class="product-tagline">Voice fidelity scoring</p>
+        <p>Does your AI output sound like you? Prufrock scores any document against your personal voice profile. Built for consultants, advisors, and anyone who sends work under their own name.</p>
+        <span class="product-status">Private Beta</span>
+      </a>
+    </section>
+
+    {flowlabs.length > 0 && <h2 class="section-title">Lab Notes</h2>}
+
+    {flowlabs.length > 0 && (
       <ul class="content-list">
         {flowlabs.map((entry) => (
           <li>
@@ -66,6 +75,53 @@ const flowlabs = allFlowlabs.sort((a, b) =>
       color: var(--color-text-muted);
       font-size: 1.1rem;
       margin: 0;
+    }
+
+    .featured-product {
+      margin-bottom: var(--spacing-2xl);
+    }
+
+    .product-card {
+      display: block;
+      text-decoration: none;
+      color: var(--color-text);
+      padding: var(--spacing-xl);
+      border: 2px solid var(--color-accent);
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .product-card h2 {
+      margin-top: 0;
+      margin-bottom: var(--spacing-xs);
+      font-size: 1.8rem;
+    }
+
+    .product-tagline {
+      font-style: italic;
+      color: var(--color-accent);
+      margin-bottom: var(--spacing-md) !important;
+    }
+
+    .product-status {
+      display: inline-block;
+      padding: 0.2rem 0.8rem;
+      background-color: var(--color-accent);
+      color: var(--color-bg);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: var(--spacing-sm);
+    }
+
+    .section-title {
+      margin-bottom: var(--spacing-lg);
+      padding-top: var(--spacing-lg);
+      border-top: 1px solid var(--color-border);
     }
 
     .empty-state {

@@ -1,0 +1,113 @@
+---
+import '../../../../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Story — narrative threads found across your family documents." />
+    <title>The Story | Prufrock</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T97366J39P"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-T97366J39P');</script>
+  </head>
+  <body>
+    <div class="fog fog-1"></div>
+    <div class="lamp"></div>
+    <nav class="prufrock-nav">
+      <a href="/flowlabs/prufrock/">← Prufrock</a>
+    </nav>
+    <main class="prufrock-page">
+      <header>
+        <span class="tier-badge">Tier 2 — includes The Archive</span>
+        <h1>The Story</h1>
+        <p class="lede">The connections you couldn't see.</p>
+      </header>
+
+      <section class="content">
+        <p>
+          Your documents lived in different boxes, in different rooms,
+          for different decades. A letter from 1994 in one box.
+          A photo from 1994 in another. A journal entry from that
+          same month in a drawer nobody opened.
+        </p>
+
+        <p>
+          Separately, they're artifacts. Together, they're a story.
+        </p>
+
+        <h2>Everything in The Archive, plus</h2>
+
+        <ul>
+          <li>AI analysis of your entire transcribed archive for narrative threads — recurring themes, relationships, conflicts, transformations</li>
+          <li>Cross-document connections — what your father wrote the same week your mother took that photo</li>
+          <li>A one-on-one walkthrough session where I show you what the pipeline found</li>
+          <li>Face identification — we name every person in your photos together on the call</li>
+          <li>Oral history capture — the stories you tell during our session are recorded and transcribed</li>
+          <li>A memoir scaffold — suggested structure, key moments, narrative arcs ready to write from</li>
+        </ul>
+
+        <h2>The walkthrough</h2>
+
+        <p>
+          This is not a software demo. It's the moment you see your family's
+          story laid out across a timeline for the first time and start
+          saying things like "I forgot about that" and "I didn't know
+          he wrote that."
+        </p>
+
+        <p>
+          I show you the faces the AI clustered. You tell me their names.
+          And in the telling, you start remembering things you forgot you
+          knew. That conversation — your voice, your words, your memories —
+          becomes part of the archive.
+        </p>
+
+        <p>
+          Most people who start at The Story don't need convincing
+          to continue to The Companion. The threads do the convincing.
+        </p>
+      </section>
+
+      <div class="cta-section">
+        <p>
+          <a href="mailto:robert@northwoodssentinel.com?subject=Prufrock%20—%20The%20Story">Get in touch about The Story</a>
+        </p>
+        <p class="upsell">
+          Ready to write? <a href="/flowlabs/prufrock/companion/">The Companion</a>
+          gives you an AI that already knows your family and writes in your voice.
+        </p>
+      </div>
+    </main>
+
+    <style>
+      :root{--amber:#c9a55a;--brass:#a08050;--fog-color:#8a8070;--parchment:#f5f0e8;--parchment-dark:#1a1612;--ink:#2c2418;--ink-muted:#6b5d4d;--ink-faint:#9a8b78;}
+      *{margin:0;padding:0;box-sizing:border-box;}
+      body{background-color:var(--parchment-dark);color:var(--parchment);font-family:'EB Garamond','Georgia',serif;font-size:1.15rem;line-height:1.85;min-height:100vh;overflow-x:hidden;}
+      .fog{position:fixed;top:0;left:-50%;width:200%;height:100%;pointer-events:none;z-index:0;}
+      .fog-1{background:linear-gradient(90deg,transparent 0%,rgba(201,165,90,0.015) 20%,transparent 40%,rgba(138,128,112,0.02) 60%,transparent 80%);animation:drift 60s linear infinite;}
+      @keyframes drift{from{transform:translateX(0);}to{transform:translateX(50%);}}
+      .lamp{position:fixed;top:-200px;left:50%;transform:translateX(-50%);width:800px;height:600px;background:radial-gradient(ellipse at center,rgba(201,165,90,0.06) 0%,rgba(201,165,90,0.02) 40%,transparent 70%);pointer-events:none;z-index:0;}
+      .prufrock-nav{position:relative;z-index:10;padding:1.5rem 2rem;font-size:0.85rem;letter-spacing:0.05em;}
+      .prufrock-nav a{color:var(--ink-faint);text-decoration:none;transition:color 0.3s;}
+      .prufrock-nav a:hover{color:var(--amber);}
+      .prufrock-page{position:relative;z-index:1;max-width:580px;margin:0 auto;padding:2rem 2rem 6rem;}
+      header{margin:3rem 0 2rem;text-align:center;}
+      .tier-badge{font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--brass);display:block;margin-bottom:0.5rem;}
+      h1{font-family:'Cormorant Garamond','Georgia',serif;font-size:3.5rem;font-weight:400;letter-spacing:0.05em;color:var(--amber);text-shadow:0 0 60px rgba(201,165,90,0.15);}
+      .lede{font-style:italic;color:var(--ink-faint);margin-top:0.5rem;font-size:1.1rem;}
+      h2{font-family:'Cormorant Garamond','Georgia',serif;font-size:1.4rem;font-weight:400;color:var(--amber);margin:2.5rem 0 1rem;letter-spacing:0.02em;}
+      .content p{margin-bottom:1.5rem;opacity:0.88;}
+      ul{margin:1rem 0 2rem 1.5rem;list-style:none;}
+      li{padding:0.4rem 0;padding-left:1rem;border-left:1px solid rgba(160,128,80,0.2);margin-bottom:0.5rem;opacity:0.85;}
+      .cta-section{margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(160,128,80,0.15);text-align:center;}
+      .cta-section a{color:var(--amber);text-decoration:underline;text-underline-offset:3px;}
+      .upsell{font-size:0.9rem;color:var(--ink-faint);margin-top:1.5rem;}
+      a{color:var(--amber);}
+      @media(max-width:768px){h1{font-size:2.5rem;}.prufrock-page{padding:1rem 1.5rem 4rem;}}
+    </style>
+  </body>
+</html>

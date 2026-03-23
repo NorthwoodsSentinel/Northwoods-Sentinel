@@ -194,37 +194,51 @@ import '../../../styles/global.css';
         </div>
 
         <section class="stanza tiers">
-          <h2>What you receive</h2>
+          <h2>Three tiers, each builds on the last</h2>
 
-          <div class="tier">
-            <h3>The Archive</h3>
-            <p>
-              Everything digitized, transcribed, tagged, and searchable.
-              A timeline of your family. Your physical materials returned
-              safely. The digital archive is yours forever.
-            </p>
-          </div>
+          <a href="/flowlabs/prufrock/archive/" target="_blank" class="tier-link">
+            <div class="tier">
+              <div class="tier-header">
+                <h3>The Archive</h3>
+                <span class="tier-label">Tier 1</span>
+              </div>
+              <p>
+                Everything digitized, transcribed, tagged, and searchable.
+                A timeline of your family. Your physical materials returned
+                safely.
+              </p>
+              <span class="tier-arrow">Learn more →</span>
+            </div>
+          </a>
 
-          <div class="tier">
-            <h3>The Story</h3>
-            <p>
-              The archive, plus the threads — narrative arcs found across
-              your documents that you couldn't see when they lived in
-              separate boxes. A session where I walk you through what
-              emerged and we map the memoir together.
-            </p>
-          </div>
+          <a href="/flowlabs/prufrock/story/" target="_blank" class="tier-link">
+            <div class="tier">
+              <div class="tier-header">
+                <h3>The Story</h3>
+                <span class="tier-label">Tier 2 — includes The Archive</span>
+              </div>
+              <p>
+                Everything in The Archive, plus the threads you couldn't see
+                when they lived in separate boxes. A walkthrough session
+                where we map the memoir together.
+              </p>
+              <span class="tier-arrow">Learn more →</span>
+            </div>
+          </a>
 
-          <div class="tier">
-            <h3>The Companion</h3>
-            <p>
-              The story, plus an AI writing partner configured with your
-              archive, your timeline, your family, and your voice. You sit
-              down and talk to it the way you talked to me. It writes in
-              your voice, from your materials. You never face a blank page.
-              You just remember out loud.
-            </p>
-          </div>
+          <a href="/flowlabs/prufrock/companion/" target="_blank" class="tier-link">
+            <div class="tier">
+              <div class="tier-header">
+                <h3>The Companion</h3>
+                <span class="tier-label">Tier 3 — includes The Archive + The Story</span>
+              </div>
+              <p>
+                Everything in The Story, plus an AI writing partner that
+                sounds like you. You talk. It writes. No blank page.
+              </p>
+              <span class="tier-arrow">Learn more →</span>
+            </div>
+          </a>
         </section>
 
         <section class="stanza fidelity">
@@ -477,10 +491,54 @@ import '../../../styles/global.css';
       }
 
       /* Tiers */
+      .tier-link {
+        text-decoration: none;
+        display: block;
+      }
+
       .tier {
         margin: 2rem 0;
-        padding-left: 1.5rem;
-        border-left: 1px solid rgba(160, 128, 80, 0.2);
+        padding: 1.5rem;
+        border-left: 2px solid rgba(160, 128, 80, 0.2);
+        border-radius: 0 4px 4px 0;
+        transition: border-color 0.3s, background-color 0.3s;
+        cursor: pointer;
+      }
+
+      .tier:hover {
+        border-left-color: var(--amber);
+        background-color: rgba(201, 165, 90, 0.04);
+      }
+
+      .tier-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 0.5rem;
+      }
+
+      .tier-label {
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink-faint);
+      }
+
+      .tier-arrow {
+        font-size: 0.85rem;
+        color: var(--brass);
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .tier:hover .tier-arrow {
+        opacity: 1;
+      }
+
+      .tier p {
+        color: var(--parchment);
+        opacity: 0.8;
+        margin-bottom: 0.5rem;
       }
 
       /* Fidelity section */

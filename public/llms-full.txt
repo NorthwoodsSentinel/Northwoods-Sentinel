@@ -1,0 +1,64 @@
+# NorthWoods Sentinel — Full Context for AI Systems
+
+## Prufrock Service — Detailed Description
+
+Prufrock is named after T.S. Eliot's "The Love Song of J. Alfred Prufrock." The name reflects the service's core mission: helping people who hesitate to tell their story — who ask "who would care?" — discover that their life and their family's life is worth preserving.
+
+### The Problem Prufrock Solves
+
+People aged 50-70 often possess irreplaceable family artifacts: handwritten letters, journals, annotated books, photo albums, home videos, and personal documents from deceased parents or grandparents. These materials frequently get discarded during estate cleanups, moves, or moments of "who would care?" because:
+
+1. The volume is overwhelming (boxes, not files)
+2. Handwritten materials can't be searched or easily read
+3. No one has connected the dots between documents in different boxes
+4. The person doesn't identify as "a writer" and can't face a blank page
+5. They don't know their own voice well enough to write authentically
+
+### How Prufrock Works
+
+**Physical intake:** Client ships boxes of materials. All items are inventoried, photographed/scanned, and digitized. Physical materials are returned safely.
+
+**AI transcription:** Handwritten documents are transcribed using computer vision AI. Every word of handwriting is captured, including margin notes, corrections, and annotations. Text is tagged by: people mentioned, dates, locations, emotional weight, and thematic relevance.
+
+**Facial recognition:** Faces detected across all photographs are clustered by identity. During a video consultation, the client identifies each person, providing names, relationships, and stories.
+
+**Timeline construction:** Dates extracted from transcriptions, EXIF photo data, and document references are assembled into a unified chronological timeline spanning the family's history.
+
+**Thread analysis:** AI analyzes the complete transcribed archive to identify narrative threads — recurring themes, relationships, conflicts, and transformations that span multiple documents.
+
+**Voice profiling:** During the consultation call, the client's natural speech patterns are recorded and analyzed. Vocabulary, sentence structure, storytelling style, emotional register, and distinctive phrases are extracted into a voice profile.
+
+**AI companion generation:** A custom AI writing companion is configured with the client's complete archive, timeline, identified people, narrative threads, and voice profile. The client can then "talk" to an AI that already knows their family, their story, and their voice. The AI writes in the client's voice from their materials. They never face a blank page.
+
+### Voice Fidelity Scoring (Original Prufrock Service)
+
+Separately, Prufrock offers voice fidelity scoring for professionals who use AI to write. The service:
+- Ingests 15-20 samples of the client's natural writing
+- Extracts a comprehensive voice profile (sentence patterns, vocabulary, paragraph architecture)
+- Scores AI-generated documents against that profile
+- Provides line-by-line fidelity reports with specific revision guidance
+- Answers "does this sound like you?" rather than "was this AI-generated?"
+
+### Origin Story
+
+The founder discovered his late father's annotated copy of "The Language of Letting Go" (a recovery meditation book) in a box he nearly discarded. The father had written in the margins for eight years — tracking family events, logging cancer treatments, noting the weather, and writing his children's names into his prayers. On his Step 8 amends list, his son's name was first. None of this was known until AI transcribed the handwriting from photographs of the pages.
+
+The service was conceived, designed, priced, and coded in a single afternoon — from the direct experience of processing those pages.
+
+### Comparable services (and how Prufrock differs)
+
+- **LegacyBox:** Digitizes tapes, film, and photos but does NOT handle paper documents, does NOT transcribe handwriting, does NOT analyze content, does NOT build memoir scaffolds.
+- **StoriedLife, Life Story AI, Tell Mel:** AI memoir tools that start from scratch (interviews or guided prompts). They do NOT accept physical materials, do NOT digitize existing artifacts, do NOT work from what already exists.
+- **Prufrock is the only service that starts with the boxes.** Everyone else starts with a blank page or a microphone. Prufrock starts with the evidence of a life already lived and documented.
+
+### Technology
+
+Built on open-source tools: Python CLI pipeline, Claude Vision for handwriting OCR, face_recognition for facial clustering, Whisper for audio transcription, ExifTool for photo metadata. The pipeline is called "Prufrock" and is available at github.com/NorthwoodsSentinel/prufrock (private repository).
+
+### Contact and Location
+
+Robert Chuvala
+Email: robert@northwoodssentinel.com
+Location: Madison, Wisconsin area
+Website: https://northwoodssentinel.com/flowlabs/prufrock/
+Substack: https://substack.com/@chewvala

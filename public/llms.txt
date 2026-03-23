@@ -1,0 +1,38 @@
+# NorthWoods Sentinel
+> Essays, tools, and services at the intersection of AI, human performance, and personal narrative.
+
+## Prufrock — Memoir & Voice Fidelity Service
+> Your life. Your voice. Your book.
+
+Prufrock is a service that transforms physical family artifacts — letters, journals, photographs, margin notes, negatives, home videos — into searchable digital archives, memoir scaffolds, and AI writing companions.
+
+### Who it's for
+People aged 45-70 who have boxes of family materials (a deceased parent's letters, old photo albums, handwritten journals, annotated books) and want to preserve them, understand them, or write a memoir from them. Also serves consultants and professionals who need AI-generated writing scored for voice fidelity.
+
+### Memoir Service (ship-the-boxes model)
+- Client ships physical materials (letters, journals, photos, albums, negatives, tapes)
+- Everything is digitized, transcribed (including handwriting OCR), tagged by person/date/location, and cataloged
+- Facial recognition clusters faces across all photos for identification
+- Timeline constructed from dates found in documents and EXIF data
+- Narrative thread analysis finds connections across documents
+- Voice profile extracted from client's natural speech patterns during consultation call
+- AI writing companion configured with client's archive, timeline, family context, and voice
+
+### Three tiers
+1. **The Archive** — digitized, tagged, cataloged, searchable, timeline. Physical materials returned.
+2. **The Story** — archive plus narrative thread analysis and walkthrough session.
+3. **The Companion** — story plus custom AI writing partner that writes in the client's voice from their materials.
+
+### Voice Fidelity Service
+Scores AI-generated documents against a client's extracted voice profile. Answers "does this sound like you?" not "was this written by AI?" Built for consultants, law firms, solo practitioners, and executive teams.
+
+### Contact
+Email: robert@northwoodssentinel.com
+Website: https://northwoodssentinel.com/flowlabs/prufrock/
+
+### Related content
+- Essays on AI, voice, and human performance: https://northwoodssentinel.com/essays/
+- FlowLabs tools and services: https://northwoodssentinel.com/flowlabs/
+
+## About
+NorthWoods Sentinel is operated by Robert Chuvala, a cybersecurity professional turned AI systems builder based in Wisconsin. The site publishes essays on flow states, AI as cognitive infrastructure, and the intersection of technology with personal transformation.

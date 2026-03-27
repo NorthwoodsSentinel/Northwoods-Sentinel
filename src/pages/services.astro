@@ -1,0 +1,195 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <div class="container">
+    <section class="hero">
+      <h1>Work With Me</h1>
+      <p class="lead">
+        I build tools that make AI personal. If you're tired of generic output from systems that don't know you, I can fix that.
+      </p>
+    </section>
+
+    <section class="services">
+
+      <div class="service-card">
+        <h2>AI Seed Kit Extraction</h2>
+        <p class="price">Starting at $500</p>
+        <p>One hour with me. I extract your voice patterns, cognitive style, communication preferences, and work context into a structured profile that makes any AI instance know you from minute one.</p>
+        <p>You walk away with a self-installing seed that works with Claude Code, ChatGPT, Gemini, or anything else. No technical skill required. The AI configures itself.</p>
+        <ul>
+          <li>60-minute voice interview (recorded, transcribed)</li>
+          <li>Voice profile and cognitive style extraction</li>
+          <li>Self-installing seed kit (markdown files)</li>
+          <li>Verification session: we test it together</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h2>Voice Insurance</h2>
+        <p class="price">Starting at $1,500</p>
+        <p>A forensic stylometric instrument that answers "does this sound like you?" not "is this AI?" I extract your writing voice from a corpus of your real work, build a fidelity profile, and score anything you produce against it.</p>
+        <p>For consultants, lawyers, executives, and anyone whose clients know what they sound like.</p>
+        <ul>
+          <li>Writing corpus analysis (emails, docs, transcripts)</li>
+          <li>Voice profile extraction (sentence patterns, vocabulary, structure)</li>
+          <li>Fidelity scoring tool calibrated to your voice</li>
+          <li>AI calibration instructions so your tools match your voice</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h2>Prufrock: Memoir Pipeline</h2>
+        <p class="price">Starting at $2,500</p>
+        <p>Ship me a box. Letters, journals, photos, annotated books. I digitize everything, build a searchable archive, extract narrative threads, and hand you back a memoir scaffold with an AI writing companion that knows your story.</p>
+        <p>Your life. Your voice. Your book.</p>
+        <ul>
+          <li>Physical artifact digitization and archiving</li>
+          <li>Narrative thread extraction and timeline construction</li>
+          <li>Memoir scaffold with chapter structure</li>
+          <li>AI companion calibrated to your voice and story</li>
+        </ul>
+      </div>
+
+      <div class="service-card featured">
+        <h2>Lookout: Personal Search Engine</h2>
+        <p class="price">Open Source (free) / Managed: $200 setup</p>
+        <p>A search engine where your daemon profile is the filter. Every result scored and annotated based on who you are, what you know, and what you actually need. Google personalizes on surveillance. Lookout personalizes on you.</p>
+        <ul>
+          <li>Self-deploy: <a href="https://github.com/NorthwoodsSentinel/lookout">Fork the repo</a>, plug in your daemon, done</li>
+          <li>Managed setup: I configure and deploy your personal instance</li>
+          <li>Includes seed kit extraction for the daemon profile</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="cta">
+      <h2>Let's Talk</h2>
+      <p>Every engagement starts with a conversation. No pitch, no pressure. Just tell me what you're working on and I'll tell you if I can help.</p>
+      <p class="email"><a href="mailto:rob@northwoodssentinel.com">rob@northwoodssentinel.com</a></p>
+    </section>
+
+  </div>
+
+  <style>
+    .hero {
+      text-align: center;
+      margin-bottom: var(--spacing-2xl);
+      padding: var(--spacing-xl) 0;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: var(--spacing-md);
+      margin-top: 0;
+    }
+
+    .lead {
+      font-size: 1.2rem;
+      color: var(--color-text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--spacing-lg);
+      margin-bottom: var(--spacing-2xl);
+    }
+
+    .service-card {
+      padding: var(--spacing-lg);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .service-card:hover {
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    .service-card.featured {
+      border-color: var(--color-accent);
+    }
+
+    .service-card h2 {
+      margin-top: 0;
+      margin-bottom: var(--spacing-xs);
+      color: var(--color-accent);
+      font-size: 1.4rem;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .service-card p {
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    .service-card ul {
+      margin-top: var(--spacing-sm);
+      padding-left: var(--spacing-md);
+      color: var(--color-text-muted);
+    }
+
+    .service-card li {
+      margin-bottom: var(--spacing-xs);
+      line-height: 1.5;
+    }
+
+    .service-card a {
+      color: var(--color-accent);
+    }
+
+    .cta {
+      text-align: center;
+      padding: var(--spacing-2xl) 0;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .cta h2 {
+      margin-bottom: var(--spacing-md);
+    }
+
+    .cta p {
+      color: var(--color-text-muted);
+      max-width: 500px;
+      margin: 0 auto var(--spacing-md);
+      line-height: 1.6;
+    }
+
+    .email {
+      font-size: 1.3rem;
+    }
+
+    .email a {
+      color: var(--color-accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .email a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</BaseLayout>

@@ -1,3 +1,10 @@
+/*
+ * NorthWoods Sentinel — Global Stylesheet
+ * Design System: Forest green + gold + warm cream
+ *
+ * "I'll rise when I'm good and ready." — Henry Rollins
+ */
+
 /* Reset and base styles */
 *,
 *::before,
@@ -7,17 +14,34 @@
   padding: 0;
 }
 
-/* CSS Variables */
+/* CSS Variables — NWS Design System */
 :root {
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-heading: 'Source Serif 4', Georgia, serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+  --font-ui: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
 
-  --color-text: #1a1a1a;
-  --color-text-muted: #666;
-  --color-bg: #ffffff;
-  --color-bg-subtle: #f8f8f8;
-  --color-accent: #673de6;
-  --color-border: #e0e0e0;
+  /* Colors — Light Mode */
+  --color-forest: #1B3B2F;
+  --color-moss: #4A773C;
+  --color-gold: #C9A84C;
+  --color-cream: #F5E6C8;
+  --color-birch: #F5F3EF;
+  --color-bark: #5C4B3C;
+  --color-stone: #A9B0A6;
+  --color-sage: #6B9E8B;
+  --color-copper: #D4A574;
+  --color-deep: #1d2016;
+
+  --color-text: #1d2016;
+  --color-text-muted: #5C4B3C;
+  --color-bg: #F5F3EF;
+  --color-bg-subtle: #F5E6C8;
+  --color-accent: #1B3B2F;
+  --color-accent-secondary: #4A773C;
+  --color-border: #A9B0A6;
 
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -26,18 +50,24 @@
   --spacing-xl: 3rem;
   --spacing-2xl: 4rem;
 
-  --max-width: 720px;
+  --radius: 4px;
+  --max-width: 900px;
   --max-width-wide: 1200px;
 }
 
-/* Dark mode support */
+/* Dark mode — deep green-black, not generic gray
+ * "Courage is not the absence of despair; it is, rather,
+ *  the capacity to move ahead in spite of despair." — Gord Downie
+ */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: #e8e8e8;
-    --color-text-muted: #a0a0a0;
-    --color-bg: #1a1a1a;
-    --color-bg-subtle: #2a2a2a;
-    --color-border: #333;
+    --color-text: #f4f4f4;
+    --color-text-muted: #a9b0a6;
+    --color-bg: #0b1a14;
+    --color-bg-subtle: #13251b;
+    --color-accent: #7dd4a1;
+    --color-accent-secondary: #7dd4a1;
+    --color-border: #22352a;
   }
 }
 
@@ -48,7 +78,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   color: var(--color-text);
   background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
@@ -57,28 +87,35 @@ body {
 
 /* Typography scale */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
   line-height: 1.2;
   margin-bottom: var(--spacing-md);
   margin-top: var(--spacing-lg);
 }
 
 h1 {
+  font-family: var(--font-display);
   font-size: 2.5rem;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 
 h2 {
+  font-family: var(--font-heading);
   font-size: 1.8rem;
+  font-weight: 600;
   letter-spacing: -0.01em;
 }
 
 h3 {
+  font-family: var(--font-heading);
   font-size: 1.4rem;
+  font-weight: 600;
 }
 
 h4 {
+  font-family: var(--font-heading);
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 p {
@@ -86,7 +123,7 @@ p {
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-accent-secondary);
   text-decoration: none;
   transition: opacity 0.2s;
 }
@@ -127,9 +164,9 @@ pre code {
   padding: 0;
 }
 
-/* Blockquotes */
+/* Blockquotes — gold accent border, not purple */
 blockquote {
-  border-left: 3px solid var(--color-accent);
+  border-left: 3px solid var(--color-gold);
   padding-left: var(--spacing-md);
   margin-left: 0;
   margin-bottom: var(--spacing-md);
@@ -143,7 +180,7 @@ img {
   height: auto;
   display: block;
   margin: var(--spacing-lg) 0;
-  border-radius: 4px;
+  border-radius: var(--radius);
 }
 
 /* Horizontal rule */
@@ -167,6 +204,7 @@ th, td {
 }
 
 th {
+  font-family: var(--font-ui);
   font-weight: 600;
 }
 

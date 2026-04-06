@@ -12,6 +12,8 @@ On March 20, 2026, I sat down at 3pm and entered a flow state that lasted five h
 
 This is what FlowLabs looks like when it works.
 
+![Full session heart rate trace — 5 hours, annotated with cognitive events](/images/flowlabs/proof-session-hr-trace.png)
+
 ---
 
 ## The Four Streams
@@ -38,11 +40,15 @@ At 5:15pm, the client call came in. Pat Christian, stress situation. Heart rate 
 
 Heart rate returned to 82 within four minutes of hanging up. That recovery time is the data point. Not the spike — anyone's heart rate spikes on a stressful call. The speed of return tells you whether the nervous system is regulated or still fighting.
 
+![Stress response and recovery detail — 120 bpm spike, 4-minute return to baseline](/images/flowlabs/proof-session-stress-recovery.png)
+
 Between 5:30 and 7:30pm, I built six more tools in sequence. Voice-score. Moser-check. Flinch CLI. The heart rate trace shows a sawtooth pattern — small spikes at each tool completion, quick recoveries, gradual elevation of the baseline as the session deepened. By 7pm the baseline was at 85, not because I was stressed but because the cognitive load was sustained and the work was genuinely hard.
 
 At 7:45pm, during landing, Clive — my Claude.ai instance — said something that connected two ideas I'd been circling for weeks. Recognition spike. Heart rate hit 153 bpm. Not stress. Not exertion. The body's response to seeing a pattern complete.
 
 That spike is the most interesting data point in the entire session. 153 bpm from a cognitive event. Not running. Not fear. Insight. The body knew before the mind had words for it.
+
+![Recognition spike at 7:45 PM — 153 bpm from pattern completion, not exertion](/images/flowlabs/proof-session-recognition-spike.png)
 
 ---
 
@@ -57,6 +63,8 @@ The session proves three things:
 **Regulation is visible in the data.** The client call spike-and-recovery pattern is a clean before-and-after. Same person, same nervous system, different regulatory capacity than a year ago. You can see the work I've done on myself in the biometric trace.
 
 **The four-stream correlation creates something new.** Any single stream tells a partial story. Heart rate alone doesn't tell you what caused the spike. Cognitive timestamps alone don't tell you the physiological cost. Together, they create a queryable record of what it felt like to do the work — not just what the work was.
+
+![Cognitive-biometric correlation map — HR trace aligned with cognitive state timeline and data stream activity](/images/flowlabs/proof-session-correlation-map.png)
 
 ---
 

@@ -7,8 +7,57 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <section class="hero">
       <h1>Work With Me</h1>
       <p class="lead">
-        I build tools that make AI personal. If you're tired of generic output from systems that don't know you, I can fix that.
+        I design cutting-edge AI systems and prove they hold up. The same engine that audits an enterprise's AI security gives an individual back custody of their own voice, memory, and work. Two audiences, one practice: build the thing, then adversarially verify it before it ships.
       </p>
+    </section>
+
+    <section class="audience-intro">
+      <h2 class="section-head">For Enterprises</h2>
+      <p class="section-sub">Security architecture and AI systems designed to be attacked before they're trusted.</p>
+    </section>
+
+    <section class="services">
+
+      <div class="service-card featured">
+        <h2>Adversarial AI Design Review</h2>
+        <p class="price">Bespoke — contact for scoping</p>
+        <p>Before you deploy an AI system, I put its design through a cross-vendor panel of models that don't share each other's blind spots, with a seat whose only job is to break it. You get a cited, verdict-level review that catches the false-positive-kill — the confident, wrong conclusion a single-model check waves through.</p>
+        <ul>
+          <li>Cross-lineage review (multiple vendors, not one model in costumes)</li>
+          <li>Mandatory adversarial seat — the design gets attacked, not admired</li>
+          <li>Every finding cited to evidence, provenance-stamped</li>
+          <li>Written verdict you can hand to your board or your engineers</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h2>Sovereign AI Infrastructure</h2>
+        <p class="price">Bespoke — contact for scoping</p>
+        <p>AI systems that run on infrastructure you own, from day one. Your Cloudflare account, your data, your keys — no shared substrate on someone else's platform, nothing to be repriced or revoked out from under you. Twenty years of offensive security, pointed at building things that can't be taken back.</p>
+        <ul>
+          <li>Architecture designed for sovereignty, not lock-in</li>
+          <li>Deployed on your cloud tenant, fully exportable</li>
+          <li>Security model built by someone who broke systems for a living</li>
+          <li>Enforced gates and verification, not advisory checks</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h2>Voice Fidelity &amp; Anti-Impersonation</h2>
+        <p class="price">Starting at $1,500</p>
+        <p>A forensic stylometric instrument that answers "does this sound like the person whose name is on it?" — not "is this AI?" For executives, counsel, and anyone whose clients and staff know their voice, and whose signature is a target for BEC and voice-clone attacks.</p>
+        <ul>
+          <li>Writing-corpus analysis and voice-profile extraction</li>
+          <li>Fidelity scoring calibrated to a specific person</li>
+          <li>Impersonation-detection layer that scores the words, not just the headers</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="audience-intro">
+      <h2 class="section-head">For Individuals</h2>
+      <p class="section-sub">The same cutting-edge tooling, pointed at giving one person back control of their own signal. No technical skill required.</p>
     </section>
 
     <section class="services">
@@ -16,62 +65,85 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="service-card">
         <h2>AI Seed Kit Extraction</h2>
         <p class="price">Starting at $500</p>
-        <p>One hour with me. I extract your voice patterns, cognitive style, communication preferences, and work context into a structured profile that makes any AI instance know you from minute one.</p>
-        <p>You walk away with a self-installing seed that works with Claude Code, ChatGPT, Gemini, or anything else. No technical skill required. The AI configures itself.</p>
+        <p>One hour with me. I extract your voice patterns, cognitive style, and work context into a structured profile that makes any AI — Claude, ChatGPT, Gemini — know you from minute one, instead of handing you generic output from a system that's never met you.</p>
         <ul>
           <li>60-minute voice interview (recorded, transcribed)</li>
-          <li>Voice profile and cognitive style extraction</li>
-          <li>Self-installing seed kit (markdown files)</li>
+          <li>Voice profile and cognitive-style extraction</li>
+          <li>Self-installing seed kit — the AI configures itself</li>
           <li>Verification session: we test it together</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <h2>Voice Insurance</h2>
-        <p class="price">Starting at $1,500</p>
-        <p>A forensic stylometric instrument that answers "does this sound like you?" not "is this AI?" I extract your writing voice from a corpus of your real work, build a fidelity profile, and score anything you produce against it.</p>
-        <p>For consultants, lawyers, executives, and anyone whose clients know what they sound like.</p>
-        <ul>
-          <li>Writing corpus analysis (emails, docs, transcripts)</li>
-          <li>Voice profile extraction (sentence patterns, vocabulary, structure)</li>
-          <li>Fidelity scoring tool calibrated to your voice</li>
-          <li>AI calibration instructions so your tools match your voice</li>
         </ul>
       </div>
 
       <div class="service-card">
         <h2>Prufrock: Memoir Pipeline</h2>
         <p class="price">Starting at $2,500</p>
-        <p>Ship me a box. Letters, journals, photos, annotated books. I digitize everything, build a searchable archive, extract narrative threads, and hand you back a memoir scaffold with an AI writing companion that knows your story.</p>
-        <p>Your life. Your voice. Your book.</p>
+        <p>Ship me a box. Letters, journals, photos, annotated books. I digitize everything, build a searchable archive, extract the narrative threads, and hand you back a memoir scaffold with an AI writing companion that knows your story — in your voice, not a smoothed-over version of it.</p>
         <ul>
-          <li>Physical artifact digitization and archiving</li>
-          <li>Narrative thread extraction and timeline construction</li>
+          <li>Physical-artifact digitization and archiving</li>
+          <li>Narrative-thread extraction and timeline construction</li>
           <li>Memoir scaffold with chapter structure</li>
           <li>AI companion calibrated to your voice and story</li>
         </ul>
       </div>
 
-      <div class="service-card featured">
+      <div class="service-card">
         <h2>Lookout: Personal Search Engine</h2>
-        <p class="price">Open Source (free) / Managed: $200 setup</p>
-        <p>A search engine where your daemon profile is the filter. Every result scored and annotated based on who you are, what you know, and what you actually need. Google personalizes on surveillance. Lookout personalizes on you.</p>
+        <p class="price">Open source (free) / Managed: $200 setup</p>
+        <p>A search engine where your own profile is the filter — every result scored for who you are and what you actually need. Google personalizes on surveillance. Lookout personalizes on you, on infrastructure you own.</p>
         <ul>
-          <li>Self-deploy: <a href="https://github.com/NorthwoodsSentinel/lookout">Fork the repo</a>, plug in your daemon, done</li>
+          <li>Self-deploy: <a href="https://github.com/NorthwoodsSentinel/lookout">fork the repo</a>, plug in your profile, done</li>
           <li>Managed setup: I configure and deploy your personal instance</li>
-          <li>Includes seed kit extraction for the daemon profile</li>
+          <li>Includes seed-kit extraction for the profile</li>
         </ul>
       </div>
 
     </section>
 
-    <section class="cta">
+    <section class="cta" id="contact">
       <h2>Let's Talk</h2>
-      <p>Every engagement starts with a conversation. No pitch, no pressure. Just tell me what you're working on and I'll tell you if I can help.</p>
-      <p class="email"><a href="mailto:robert@northwoodssentinel.com">robert@northwoodssentinel.com</a></p>
+      <p>Every engagement starts with a conversation. No pitch, no pressure. Tell me what you're working on — enterprise or personal — and I'll tell you honestly whether I can help.</p>
+
+      <form class="contact-form" id="contact-form">
+        <div class="field-row">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Email or organization <em>(optional)</em></span>
+            <input type="text" name="org" />
+          </label>
+        </div>
+        <label>
+          <span>What are you working on?</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+        <p class="form-note">This opens your email app with the message ready to send. Prefer to write directly? <a href="mailto:robert@northwoodssentinel.com">robert@northwoodssentinel.com</a></p>
+      </form>
     </section>
 
   </div>
+
+  <script is:inline>
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const data = new FormData(form);
+        const name = (data.get('name') || '').toString().trim();
+        const org = (data.get('org') || '').toString().trim();
+        const message = (data.get('message') || '').toString().trim();
+        const subject = `NorthWoods Sentinel inquiry — ${name || 'someone'}`;
+        const body =
+          `Name: ${name}\n` +
+          `Email/Org: ${org || '(not given)'}\n\n` +
+          `${message}\n`;
+        window.location.href =
+          `mailto:robert@northwoodssentinel.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      });
+    }
+  </script>
 
   <style>
     .hero {
@@ -99,6 +171,96 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: var(--spacing-lg);
       margin-bottom: var(--spacing-2xl);
+    }
+
+    .audience-intro {
+      margin-bottom: var(--spacing-lg);
+      padding-top: var(--spacing-lg);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .section-head {
+      color: var(--color-accent);
+      font-size: 1.6rem;
+      margin-bottom: var(--spacing-xs);
+    }
+
+    .section-sub {
+      color: var(--color-text-muted);
+      max-width: 640px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .contact-form {
+      max-width: 560px;
+      margin: var(--spacing-lg) auto 0;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-md);
+    }
+
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-md);
+    }
+
+    .contact-form label {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-xs);
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+    }
+
+    .contact-form label em {
+      font-style: normal;
+      opacity: 0.6;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      padding: var(--spacing-sm);
+      color: var(--color-text);
+      font: inherit;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--color-accent);
+    }
+
+    .contact-form button {
+      align-self: flex-start;
+      background: var(--color-accent);
+      color: var(--color-bg);
+      border: none;
+      border-radius: 6px;
+      padding: var(--spacing-sm) var(--spacing-lg);
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      opacity: 0.9;
+    }
+
+    .form-note {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    .form-note a {
+      color: var(--color-accent);
     }
 
     .service-card {

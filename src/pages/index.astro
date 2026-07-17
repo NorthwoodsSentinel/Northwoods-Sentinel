@@ -16,11 +16,21 @@ const recentEssays = allEssays
     <section class="hero">
       <h1>NorthWoods Sentinel</h1>
       <p class="lead">
-        Tools, essays, and systems thinking on AI, human performance, and the infrastructure between your brain and your work.
+        I design AI systems as if they will be attacked — then prove they hold up. Adversarial design review, sovereign infrastructure, and voice-fidelity security, built on twenty years of offensive security and a live personal fleet that serves as the test range. For enterprises and for individuals.
       </p>
     </section>
 
     <section class="sections-grid">
+      <a href="/services" class="section-card featured-card">
+        <h2>Work With Me</h2>
+        <p>Cutting-edge AI, built and adversarially verified — for enterprises and individuals. Design review, sovereign infrastructure, voice fidelity, seed kits, memoir pipelines.</p>
+      </a>
+
+      <a href="/systems" class="section-card">
+        <h2>Systems</h2>
+        <p>Technical thinking, architecture, and cybersecurity insights</p>
+      </a>
+
       <a href="/essays" class="section-card">
         <h2>Essays</h2>
         <p>Long-form writing on creativity, systems, and transformation</p>
@@ -31,19 +41,9 @@ const recentEssays = allEssays
         <p>Tools for people who think with AI. Voice fidelity, cognitive instrumentation.</p>
       </a>
 
-      <a href="/systems" class="section-card">
-        <h2>Systems</h2>
-        <p>Technical thinking, architecture, and cybersecurity insights</p>
-      </a>
-
       <a href="/media" class="section-card">
         <h2>Media</h2>
         <p>Video content, talks, and multimedia exploration</p>
-      </a>
-
-      <a href="/services" class="section-card">
-        <h2>Work With Me</h2>
-        <p>Cutting-edge AI, built and adversarially verified — for enterprises and individuals. Design review, sovereign infrastructure, voice fidelity, seed kits, memoir pipelines.</p>
       </a>
     </section>
 
@@ -114,6 +114,11 @@ const recentEssays = allEssays
     .section-card:hover {
       border-color: var(--color-accent);
       transform: translateY(-2px);
+    }
+
+    .featured-card {
+      border-color: var(--color-accent);
+      grid-column: 1 / -1;
     }
 
     .section-card h2 {

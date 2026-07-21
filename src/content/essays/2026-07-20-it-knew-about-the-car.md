@@ -3,7 +3,7 @@ title: "It Knew About the Car"
 description: "The night one AI session knew something I'd only told another — and how a small cold drop in the stomach became the year of building the walls that decide what crosses between minds, and when."
 date: 2026-07-20
 tags: [substrate, sovereignty, ai-architecture, memory, guardrails, memoir, verification]
-draft: true
+draft: false
 ---
 
 # It Knew About the Car

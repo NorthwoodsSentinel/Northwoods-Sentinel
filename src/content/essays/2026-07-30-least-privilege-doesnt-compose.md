@@ -3,7 +3,7 @@ title: "Least Privilege Doesn't Compose"
 description: "Twenty years of breaking into networks taught me the way in is never the front door — it's a chain of things that were each individually allowed. Agent swarms have exactly this shape, and per-agent security review can't see it. The structural half of the answer, built and given away."
 date: 2026-07-30
 tags: [security, agents, least-privilege, attack-paths, swarm-posture, ai-architecture]
-draft: true
+draft: false
 ---
 
 # Least Privilege Doesn't Compose

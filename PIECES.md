@@ -1,6 +1,6 @@
 # NorthWoods Sentinel — Pieces Ledger
 
-**Ask Archie:** "What unfinished pieces do I have?" or "What's published?" or "What ideas are queued?"
+**Ask the fleet:** "What unfinished pieces do I have?" or "What's published?" or "What ideas are queued?"
 
 **Statuses:** `DRAFT` (written, not published) | `PUBLISHED` (live on site) | `IDEA` (title/concept only) | `ARCHIVED` (abandoned)
 
@@ -78,4 +78,4 @@
 
 ---
 
-*Maintained by Archie. Update when pieces are added, published, or archived.*
+*Maintained by the fleet — currently Margin and CeeCee. Update when pieces are added, published, or archived.*

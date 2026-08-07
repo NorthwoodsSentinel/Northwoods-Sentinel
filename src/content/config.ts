@@ -48,9 +48,20 @@ const mediaCollection = defineCollection({
   }),
 });
 
+// Drift - agent-authored writing; an experiment in the drift of agents. Signed by the agent, not by Rob.
+const driftCollection = defineCollection({
+  type: 'content',
+  schema: baseSchema.extend({
+    // which fleet agent wrote it, and the day it marks
+    agent: z.string().optional(),
+    style: z.string().optional(),
+  }),
+});
+
 export const collections = {
   'essays': essaysCollection,
   'flowlabs': flowlabsCollection,
   'systems': systemsCollection,
   'media': mediaCollection,
+  'drift': driftCollection,
 };

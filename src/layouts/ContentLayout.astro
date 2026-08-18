@@ -20,6 +20,10 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
 const content = await entry.render();
 const words = content.remarkPluginFrontmatter?.wordCount ?? 0;
 const readingTime = Math.ceil(words / 200);
+
+// "Write me" — the essays have no comment box on purpose. The door is a plain email with the piece's title
+// in the subject line, so a reply lands where Rob already reads and nothing needs moderating.
+const writeMeHref = `mailto:robert@northwoodssentinel.com?subject=${encodeURIComponent("Re: " + title)}`;
 ---
 
 <BaseLayout title={title} description={description}>
@@ -48,6 +52,10 @@ const readingTime = Math.ceil(words / 200);
       <div class="article-content prose">
         <slot />
       </div>
+
+      <footer class="write-me">
+        <p>There is no comment box here on purpose. If this piece stirred something, <a href={writeMeHref}>write me</a>. I read every one and answer the ones I can.</p>
+      </footer>
     </div>
   </article>
 
@@ -61,6 +69,19 @@ const readingTime = Math.ceil(words / 200);
       margin-bottom: var(--spacing-2xl);
       padding-bottom: var(--spacing-lg);
       border-bottom: 1px solid var(--color-border);
+    }
+
+    .write-me {
+      margin-top: var(--spacing-2xl);
+      padding-top: var(--spacing-lg);
+      border-top: 1px solid var(--color-border);
+      color: var(--color-text-muted, inherit);
+      font-size: 0.95rem;
+    }
+
+    .write-me a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
 
     .article-header h1 {

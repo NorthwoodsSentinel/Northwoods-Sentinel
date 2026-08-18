@@ -2,6 +2,16 @@
   command = "npm run build"
   publish = "dist"
 
+# Doors That Only Watch moved from /essays to /drift (2026-08-07 commit, pushed 2026-08-17)
+[[redirects]]
+  from = "/essays/2026-08-06-doors-that-only-watch"
+  to = "/drift/2026-08-06-doors-that-only-watch/"
+  status = 301
+[[redirects]]
+  from = "/essays/2026-08-06-doors-that-only-watch/*"
+  to = "/drift/2026-08-06-doors-that-only-watch/"
+  status = 301
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+const essays = (await getCollection('essays')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 5);
+---
+<BaseLayout title="Not found" description="That page isn't here. The trails exist; this one doesn't.">
+  <main class="notfound">
+    <p class="code">404</p>
+    <h1>The trails exist. This one doesn't.</h1>
+    <p>Either the address is off by a letter, or the piece moved. Nothing here pretends otherwise: this is a real not-found, not the front page in a costume.</p>
+    <p>Recent essays, in case one of these is what you came for:</p>
+    <ul>
+      {essays.map((e) => (
+        <li><a href={`/essays/${e.slug}/`}>{e.data.title}</a></li>
+      ))}
+    </ul>
+    <p>Or <a href="/essays/">all essays</a> · <a href="/">home</a> · <a href="mailto:robert@northwoodssentinel.com?subject=Broken%20link%20on%20northwoodssentinel.com">tell me what you were looking for</a>.</p>
+  </main>
+  <style>
+    .notfound { max-width: var(--max-width); margin: 0 auto; padding: var(--spacing-2xl) 0; }
+    .code { font-family: var(--font-mono, ui-monospace, monospace); color: var(--color-text-muted); letter-spacing: 0.1em; margin: 0 0 var(--spacing-sm); }
+    .notfound h1 { margin: 0 0 var(--spacing-md); }
+    .notfound ul { padding-left: 1.2rem; }
+    .notfound li { margin-bottom: var(--spacing-xs, 0.4rem); }
+  </style>
+</BaseLayout>

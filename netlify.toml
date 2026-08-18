@@ -12,7 +12,5 @@
   to = "/drift/2026-08-06-doors-that-only-watch/"
   status = 301
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# No SPA catch-all: this is a static site. Missing paths get the real 404 page (src/pages/404.astro → dist/404.html),
+# which Netlify serves with a 404 status automatically. Removed 2026-08-17 (a nonexistent URL used to return the homepage with 200).

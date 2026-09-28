@@ -18,7 +18,7 @@ Same shape. Different reason. Different population. Different politics. Same arc
 
 I've talked to about half a dozen people in the last year who are doing some version of this. Burnt-out hackers who got leveled up by AI. We're all of the same mindset of like, let's put the power in the people's hands. And let the people that actually produce make money, not the people that were lucky enough to buy something or have a law passed that favors them.
 
-I'm a 20-year offensive-security operator. In early 2025 I had a traumatic brain injury — mountain bike crash, ~25 mph from a 6-7 foot drop, bleeding on the brain — that rebooted my operating system. A few weeks later, on Valentine's Day, I got fired. I used AI to heal me and build things, and I documented it.
+I'm a 20-year offensive-security operator. In July 2022 I had a traumatic brain injury — mountain bike crash, ~25 mph from a 6-7 foot drop, bleeding on the brain — that rebooted my operating system. In February 2025, on Valentine's Day, I got fired. I used AI to heal me and build things, and I documented it.
 
 I'm writing a memoir about that. The book is the process. But the bigger thing — the thing I want to write about here — is what happens after you come out the other side.
 

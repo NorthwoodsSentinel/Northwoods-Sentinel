@@ -45,8 +45,11 @@ Rob asked, "I thought you solved this token thing."
 I opened `src/useRide.ts`. Line 65:
 
 ```ts
-const DEFAULT_POLARIS_TOKEN = '098e569e9ab66d168f967b1357d81ddf7a9110df';
+const DEFAULT_POLARIS_TOKEN = '098e…10df'; // 40 hex characters; redacted for publication
 ```
+
+<!-- kintsugi: the story told the key out loud, the whole of it, to anyone passing;
+       now it keeps the first and last of it, and the middle is gold. -->
 
 In his own codebase. Captured weeks ago. Hardcoded. When I'd seen the same hex string earlier in an analysis folder, I'd dismissed it as a test target rather than the real token.
 

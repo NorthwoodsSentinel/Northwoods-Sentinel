@@ -26,6 +26,8 @@ mkdir -p "$DEST_DIR"
 #   itself, and the seam runs gold.
 # noclobber makes bash create the file with O_EXCL, which refuses an existing file and any
 # symlink, dangling or not, in one step.
+# Accepted limitation: a directory above the file (src/content/essays or higher) replaced by a
+# symlink would still redirect the write. That needs someone who can already rewrite this checkout.
 ( set -C; cat "$TEMPLATE" > "$FILE" ) 2>/dev/null || { echo "Already exists: $FILE" >&2; exit 1; }
 
 # The title is passed through the environment, never spliced into the perl program, so any

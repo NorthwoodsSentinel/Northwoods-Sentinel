@@ -19,9 +19,14 @@ esac
 DATE="$(date +%F)"
 FILE="$DEST_DIR/$DATE-$SLUG.md"
 
-[ -e "$FILE" ] && { echo "Already exists: $FILE" >&2; exit 1; }
+[ -f "$TEMPLATE" ] || { echo "Template missing: $TEMPLATE" >&2; exit 1; }
 mkdir -p "$DEST_DIR"
-cp "$TEMPLATE" "$FILE"
+# kintsugi: the press once looked to see whether the page was blank and then printed, and in the
+#   breath between, a false page could be slipped under it; now it prints only on a page it made
+#   itself, and the seam runs gold.
+# noclobber makes bash create the file with O_EXCL, which refuses an existing file and any
+# symlink, dangling or not, in one step.
+( set -C; cat "$TEMPLATE" > "$FILE" ) 2>/dev/null || { echo "Already exists: $FILE" >&2; exit 1; }
 
 # The title is passed through the environment, never spliced into the perl program, so any
 # characters in it are inserted literally. Quotes and backslashes are escaped for the YAML line.

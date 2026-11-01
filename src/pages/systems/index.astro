@@ -24,7 +24,7 @@ const systems = allSystems.sort((a, b) =>
       <ul class="content-list">
         {systems.map((entry) => (
           <li>
-            <a href={`/systems/${entry.slug}`} class="content-item">
+            <a href={`/systems/${entry.id}`} class="content-item">
               <h2>{entry.data.title}</h2>
               <p>{entry.data.description}</p>
               <div class="meta">

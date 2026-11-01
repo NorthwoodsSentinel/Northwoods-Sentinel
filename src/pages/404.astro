@@ -11,7 +11,7 @@ const essays = (await getCollection('essays')).sort((a, b) => b.data.date.valueO
     <p>Recent essays, in case one of these is what you came for:</p>
     <ul>
       {essays.map((e) => (
-        <li><a href={`/essays/${e.slug}/`}>{e.data.title}</a></li>
+        <li><a href={`/essays/${e.id}/`}>{e.data.title}</a></li>
       ))}
     </ul>
     <p>Or <a href="/essays/">all essays</a> · <a href="/">home</a> · <a href="mailto:robert@northwoodssentinel.com?subject=Broken%20link%20on%20northwoodssentinel.com">tell me what you were looking for</a>.</p>

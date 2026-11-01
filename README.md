@@ -4,33 +4,33 @@ Personal publishing platform for essays, experiments, and systems thinking.
 
 ## Tech Stack
 
-- **Framework**: Astro 5.x
-- **Content**: Markdown/MDX with Content Collections
+- **Framework**: Astro 7.x (remark pipeline via `unified()`)
+- **Content**: Markdown with Content Collections (glob loaders, `src/content.config.ts`)
 - **Styling**: Vanilla CSS (minimal, clean typography)
-- **Hosting**: Netlify (recommended)
+- **Hosting**: Cloudflare Pages (GitHub Actions deploy on push to main)
 
 ## Publishing Workflow
 
 1. **Create Content**: Add markdown files to `src/content/{section}/`
-2. **Test Locally**: `npm run dev` to preview
-3. **Deploy**: `git push` triggers auto-deployment on Netlify
+2. **Test Locally**: `bun run dev` to preview
+3. **Deploy**: a push to `main` builds and deploys to Cloudflare Pages (`.github/workflows/deploy.yml`)
 
-## Deployment to Netlify
+## Deployment
 
-1. Push code to GitHub
-2. Connect repository to Netlify
-3. Configure custom domain `northwoodssentinel.com`
-4. Auto-deploy on every push to main
+`.github/workflows/deploy.yml` installs with `bun install --frozen-lockfile` (the only lockfile is `bun.lock`), builds, and deploys `dist` to the `northwoods-sentinel` Cloudflare Pages project.
 
 ## Quick Start
 
 ```bash
+# Setup
+bun install --frozen-lockfile
+
 # Development
-npm run dev          # Start dev server at localhost:4321
+bun run dev          # Start dev server at localhost:4321
 
 # Production
-npm run build        # Build static site
-npm run preview      # Preview production build
+bun run build        # Build static site
+bun run preview      # Preview production build
 ```
 
 ---

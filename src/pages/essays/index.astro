@@ -24,7 +24,7 @@ const essays = allEssays.sort((a, b) =>
       <ul class="content-list">
         {essays.map((essay) => (
           <li>
-            <a href={`/essays/${essay.slug}`} class="content-item">
+            <a href={`/essays/${essay.id}`} class="content-item">
               <h2>{essay.data.title}</h2>
               <p>{essay.data.description}</p>
               <div class="meta">

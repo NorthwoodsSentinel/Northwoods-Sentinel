@@ -53,7 +53,7 @@ const recentEssays = allEssays
         <ul class="essay-list">
           {recentEssays.map((essay) => (
             <li>
-              <a href={`/essays/${essay.slug}`} class="essay-item">
+              <a href={`/essays/${essay.id}`} class="essay-item">
                 <h3>{essay.data.title}</h3>
                 <p>{essay.data.description}</p>
                 <time datetime={essay.data.date.toISOString()}>

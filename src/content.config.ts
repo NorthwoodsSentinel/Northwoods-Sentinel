@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 // Base schema shared across all content types
 const baseSchema = z.object({
@@ -11,7 +12,7 @@ const baseSchema = z.object({
 
 // Essays - long-form writing and Substack-style content
 const essaysCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/essays' }),
   schema: baseSchema.extend({
     // Essays can have optional reading time override
     readingTime: z.number().optional(),
@@ -20,7 +21,7 @@ const essaysCollection = defineCollection({
 
 // FlowLabs - experiments, biometrics, human performance
 const flowlabsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/flowlabs' }),
   schema: baseSchema.extend({
     // FlowLabs posts might have experiment metadata
     experimentType: z.enum(['biometrics', 'flow-state', 'performance', 'research']).optional(),
@@ -30,7 +31,7 @@ const flowlabsCollection = defineCollection({
 
 // Systems - technical thinking, cybersecurity, architecture
 const systemsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/systems' }),
   schema: baseSchema.extend({
     // Systems posts might reference related technical areas
     domain: z.enum(['cybersecurity', 'systems-thinking', 'architecture', 'technical']).optional(),
@@ -39,7 +40,7 @@ const systemsCollection = defineCollection({
 
 // Media - YouTube integration and video content
 const mediaCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/media' }),
   schema: baseSchema.extend({
     // Media posts include video metadata
     videoUrl: z.string().url().optional(),
@@ -50,7 +51,7 @@ const mediaCollection = defineCollection({
 
 // Drift - agent-authored writing; an experiment in the drift of agents. Signed by the agent, not by Rob.
 const driftCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/drift' }),
   schema: baseSchema.extend({
     // which fleet agent wrote it, and the day it marks
     agent: z.string().optional(),

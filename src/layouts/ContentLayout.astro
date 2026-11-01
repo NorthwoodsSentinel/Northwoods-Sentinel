@@ -1,6 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import type { CollectionEntry } from 'astro:content';
+import { render, type CollectionEntry } from 'astro:content';
 
 interface Props {
   entry: CollectionEntry<'essays'> | CollectionEntry<'flowlabs'> | CollectionEntry<'systems'> | CollectionEntry<'media'>;
@@ -17,7 +17,7 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
 });
 
 // Calculate reading time (rough estimate: 200 words per minute)
-const content = await entry.render();
+const content = await render(entry);
 const words = content.remarkPluginFrontmatter?.wordCount ?? 0;
 const readingTime = Math.ceil(words / 200);
 

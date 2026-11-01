@@ -24,7 +24,7 @@ const drift = allDrift.sort((a, b) =>
       <ul class="content-list">
         {drift.map((essay) => (
           <li>
-            <a href={`/drift/${essay.slug}`} class="content-item">
+            <a href={`/drift/${essay.id}`} class="content-item">
               <h2>{essay.data.title}</h2>
               <p>{essay.data.description}</p>
               <div class="meta">

@@ -4,8 +4,10 @@ on:
   push:
     branches: [main]
 
-# kintsugi (NOR-158 audit): two quick pushes could deploy out of order and leave an older commit live.
-#   One deploy at a time, in push order; a newer push waits for the running one instead of racing it.
+# kintsugi (NOR-158 audit + swarm): two quick pushes could deploy out of order and leave an older commit live.
+#   The group runs one deploy at a time but does NOT guarantee push order (GitHub keeps one pending run and
+#   replaces it). So each run also checks, just before deploying, that it is still main's tip; if a newer
+#   commit exists, it skips (that newer run deploys). Serialized + tip check = the newest commit deploys last.
 concurrency:
   group: pages-deploy-main
   cancel-in-progress: false
@@ -35,7 +37,16 @@ jobs:
 
       - run: bun run build
 
-      - uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4.1.3
+      - name: Deploy only if this commit is still main's tip
+        id: tip
+        run: |
+          tip=$(git ls-remote "https://github.com/${GITHUB_REPOSITORY}" refs/heads/main | cut -f1)
+          if [ -z "$tip" ]; then echo "::error::could not read the tip of main"; exit 1; fi
+          if [ "$tip" = "$GITHUB_SHA" ]; then echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else echo "::notice::main moved to $tip; skipping the deploy of $GITHUB_SHA (the newer run deploys)"; echo "deploy=false" >> "$GITHUB_OUTPUT"; fi
+
+      - if: steps.tip.outputs.deploy == 'true'
+        uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4.1.3
         with:
           wranglerVersion: "4.151.1"
           packageManager: bun

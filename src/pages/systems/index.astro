@@ -7,7 +7,7 @@ const allSystems = await getCollection('systems', ({ data }) => {
 });
 
 const systems = allSystems.sort((a, b) =>
-  b.data.date.valueOf() - a.data.date.valueOf()
+  b.data.date.valueOf() - a.data.date.valueOf() || a.id.localeCompare(b.id)
 );
 ---
 

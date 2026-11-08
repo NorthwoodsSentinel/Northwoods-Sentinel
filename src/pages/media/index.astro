@@ -7,7 +7,7 @@ const allMedia = await getCollection('media', ({ data }) => {
 });
 
 const media = allMedia.sort((a, b) =>
-  b.data.date.valueOf() - a.data.date.valueOf()
+  b.data.date.valueOf() - a.data.date.valueOf() || a.id.localeCompare(b.id)
 );
 ---
 

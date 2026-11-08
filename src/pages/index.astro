@@ -7,7 +7,7 @@ const allEssays = await getCollection('essays', ({ data }) => {
   return data.draft !== true;
 });
 const recentEssays = allEssays
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf() || a.id.localeCompare(b.id))
   .slice(0, 5);
 ---
 

@@ -11,7 +11,7 @@ export async function GET(context) {
     description: 'Essays on security, AI, and human performance by Rob Chuvala.',
     site: context.site,
     items: essays
-      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf() || a.id.localeCompare(b.id))
       .map((post) => ({
         title: post.data.title,
         pubDate: post.data.date,

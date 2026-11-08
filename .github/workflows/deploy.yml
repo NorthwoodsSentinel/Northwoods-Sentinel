@@ -4,9 +4,15 @@ on:
   push:
     branches: [main]
 
+# kintsugi (NOR-158 audit): two quick pushes could deploy out of order and leave an older commit live.
+#   One deploy at a time, in push order; a newer push waits for the running one instead of racing it.
+concurrency:
+  group: pages-deploy-main
+  cancel-in-progress: false
+
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
     # kintsugi: the key once passed through hands held only by a name that could be moved,
@@ -19,7 +25,7 @@ jobs:
 
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: 22
+          node-version: "22.23.4"
 
       - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
         with:

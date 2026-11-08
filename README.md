@@ -13,7 +13,7 @@ Personal publishing platform for essays, experiments, and systems thinking.
 
 1. **Create Content**: Add markdown files to `src/content/{section}/`
 2. **Test Locally**: `bun run dev` to preview
-3. **Deploy**: a push to `main` builds and deploys to Cloudflare Pages (`.github/workflows/deploy.yml`)
+3. **Deploy**: a push to `main` builds and deploys to Cloudflare Pages (`.github/workflows/deploy.yml`). Deploys run one at a time; if several pushes arrive together, only the newest commit (which contains the others) is deployed.
 
 ## Deployment
 

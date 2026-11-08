@@ -5,9 +5,9 @@ on:
     branches: [main]
 
 # kintsugi (NOR-158 audit + swarm): two quick pushes could deploy out of order and leave an older commit live.
-#   The group runs one deploy at a time but does NOT guarantee push order (GitHub keeps one pending run and
-#   replaces it). So each run also checks, just before deploying, that it is still main's tip; if a newer
-#   commit exists, it skips (that newer run deploys). Serialized + tip check = the newest commit deploys last.
+#   The group runs one deploy at a time. It does NOT guarantee push order, and a newer push replaces a waiting
+#   one (the replaced commit's changes are in the newer commit). So each run also checks, just before deploying,
+#   that it is still main's tip, and skips if not. Result: whatever deploys last is main's newest commit.
 concurrency:
   group: pages-deploy-main
   cancel-in-progress: false

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-const essays = (await getCollection('essays')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 5);
+const essays = (await getCollection('essays', ({ data }) => data.draft !== true)).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf() || a.id.localeCompare(b.id)).slice(0, 5);
 ---
 <BaseLayout title="Not found" description="That page isn't here. The trails exist; this one doesn't.">
   <main class="notfound">
@@ -11,7 +11,7 @@ const essays = (await getCollection('essays')).sort((a, b) => b.data.date.valueO
     <p>Recent essays, in case one of these is what you came for:</p>
     <ul>
       {essays.map((e) => (
-        <li><a href={`/essays/${e.slug}/`}>{e.data.title}</a></li>
+        <li><a href={`/essays/${e.id}/`}>{e.data.title}</a></li>
       ))}
     </ul>
     <p>Or <a href="/essays/">all essays</a> · <a href="/">home</a> · <a href="mailto:robert@northwoodssentinel.com?subject=Broken%20link%20on%20northwoodssentinel.com">tell me what you were looking for</a>.</p>

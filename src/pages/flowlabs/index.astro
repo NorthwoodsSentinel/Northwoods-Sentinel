@@ -7,7 +7,7 @@ const allFlowlabs = await getCollection('flowlabs', ({ data }) => {
 });
 
 const flowlabs = allFlowlabs.sort((a, b) =>
-  b.data.date.valueOf() - a.data.date.valueOf()
+  b.data.date.valueOf() - a.data.date.valueOf() || a.id.localeCompare(b.id)
 );
 ---
 
@@ -33,7 +33,7 @@ const flowlabs = allFlowlabs.sort((a, b) =>
       <ul class="content-list">
         {flowlabs.map((entry) => (
           <li>
-            <a href={`/flowlabs/${entry.slug}`} class="content-item">
+            <a href={`/flowlabs/${entry.id}`} class="content-item">
               <h2>{entry.data.title}</h2>
               <p>{entry.data.description}</p>
               <div class="meta">

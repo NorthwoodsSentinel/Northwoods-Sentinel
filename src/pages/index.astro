@@ -7,7 +7,7 @@ const allEssays = await getCollection('essays', ({ data }) => {
   return data.draft !== true;
 });
 const recentEssays = allEssays
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf() || a.id.localeCompare(b.id))
   .slice(0, 5);
 ---
 
@@ -53,7 +53,7 @@ const recentEssays = allEssays
         <ul class="essay-list">
           {recentEssays.map((essay) => (
             <li>
-              <a href={`/essays/${essay.slug}`} class="essay-item">
+              <a href={`/essays/${essay.id}`} class="essay-item">
                 <h3>{essay.data.title}</h3>
                 <p>{essay.data.description}</p>
                 <time datetime={essay.data.date.toISOString()}>
